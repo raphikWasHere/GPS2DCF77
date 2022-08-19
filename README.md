@@ -1,2 +1,2 @@
 # gps2dcf77
-Arduino sketch that reads date &amp; time form a serial GPS device and transmits them as DCF77 signals.
+This Arduino sketch gets date and time from a serial GPS device and generates a weak, good enough RF signal to set a DCF77 clock.
