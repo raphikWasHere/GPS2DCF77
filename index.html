@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Página de prueba<title>
-</head>
-<body>
-  <h1>Hola amiguitos!</h1>
-  <footer>gpuma 2017</footer>
-</body>
-</html>
+var playerElement = document.getElementById("player-wrapper");
+
+var player = new Clappr.Player({
+  source: 'https://nogeovod-fy.atresmedia.com/vsg/_definst_/assets2/2021/07/05/50C7B586-C621-4A5B-9A7C-D93291EB7D95/hls.smil/playlist.m3u8',
+  height: 360,
+  width: 640
+});
+
+player.attachTo(playerElement);
