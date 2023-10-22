@@ -1,0 +1,21 @@
+<head>
+  <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js">
+  </script>
+</head>
+<body>
+  <div id="player"></div>
+  <script>
+    var player = new Clappr.Player({source: "", parentId: "#player"});
+  </script>
+</body>
+ <button onclick="myFunction('https://nogeovod-fy.atresmedia.com/vsg/_definst_/assets2/2021/07/05/50C7B586-C621-4A5B-9A7C-D93291EB7D95/hls.smil/playlist.m3u8')">Infiel 1</button>
+ <button onclick="myFunction('https://nogeovod-fy.atresmedia.com/vsg/_definst_/assets2/2021/07/05/C0C20F4B-DE07-4A39-9A46-3773C16288CB/hls.smil/playlist.m3u8')">Infiel 2</button>
+ <button onclick="myFunction('https://nogeovod-fy.atresmedia.com/vsg/_definst_/assets2/2021/07/05/29AE3E87-D0D0-400E-A3F6-D8061CFF4495/hls.smil/playlist.m3u8')">Infiel 3</button>
+ <button onclick="player.load('https://nogeovod-fy.atresmedia.com/vsg/_definst_/assets2/2021/07/05/98493DD2-BABD-40A4-B971-6AF007856F34/hls.smil/playlist.m3u8')">Infiel 4</button>
+<script>
+function myFunction(source) {
+  player.load(source);
+}
+</script>
+
